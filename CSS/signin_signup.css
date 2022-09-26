@@ -1,0 +1,497 @@
+body{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+html{ 
+    background: url(../Media/BG_2.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: Product-Sans-R;
+    src: url(../Font/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Android;
+    src: url(../Font/android.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Next;
+    src: url(../Font/AvenirNext-UltraLight.ttf);
+}
+
+.head{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav{
+    margin: 10px 50px 0px 50px;
+}
+
+.logo{
+    height: 55px;
+    float: left;
+}
+
+#logoimg{
+    max-height: 100%;
+    width: auto;
+}
+
+.navbtns{
+    float: right;
+    display: flex;
+}
+
+.search,.menu,.user{
+    text-align: center;
+    display: inline-block;
+    margin: 6px 0px 0px 0px;
+}
+
+.searchbtn{
+    font-family: 'Product-Sans-R';
+    font-size: 22px;
+    cursor: pointer;
+    color: #205678;
+    background: none;
+    border: none;
+    padding: 5px  10px;
+}
+
+.searchbtn:hover{
+    color: #e7f6fd;
+    background-color: #3882a5;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.menu{
+    position: relative;
+}
+
+.menubtn{
+    font-family: 'Product-Sans-R';
+    font-size: 22px;
+    cursor: pointer;
+    color: #205678;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+  
+.menudrpdwn{
+    display: none;
+    position: absolute;
+    background-color: #e7f6fd99;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    min-width: 140px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.menudrpdwn a{
+    font-family: 'Product-Sans-R';
+    color: #3882a5;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+  
+.menudrpdwn a:hover {
+    background-color: #3882a5;
+    color: #e7f6fd;
+}
+  
+.menu:hover .menudrpdwn {
+    display: block;
+}
+
+.menu:hover .menubtn{
+    background-color: #3882a5;
+    color: #e7f6fd;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.user{
+    position: relative;
+}
+
+.userbtn{
+    font-family: 'Product-Sans-R';
+    font-size: 22px;
+    cursor: pointer;
+    color: #205678;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+  
+.userdrpdwn{
+    display: none;
+    position: absolute;
+    background-color: #e7f6fd99;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    min-width: 110px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.userdrpdwn a{
+    font-family: 'Product-Sans-R';
+    color: #3882a5;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+  
+.userdrpdwn a:hover {
+    background-color: #3882a5;
+    color: #e7f6fd;
+}
+  
+.user:hover .userdrpdwn {
+    display: block;
+}
+
+.user:hover .userbtn{
+    background-color: #3882a5;
+    color: #e7f6fd;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+/*  #########################################################################
+    #########################################################################
+    #########################################################################
+    #########################################################################
+    #########################################################################
+                             SIGN IN PAGE START
+    #########################################################################
+    #########################################################################
+    #########################################################################
+    #########################################################################
+    #########################################################################
+*/
+
+.sign_in{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -315px;
+    margin-left: -500px;
+}
+
+.sign_in_bg{
+    position: absolute;
+}
+
+#sign_in_img{
+    width: 1000px;
+    height: auto;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 30px;
+}
+
+.sign_in_details{
+    position: relative;
+    float: left;
+    width: 625px;
+    height: 800px;
+}
+
+.sign_in_head{
+    font-family: 'Android';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #3882a5;
+    margin-top: 90px;
+    margin-left: 180px;
+    margin-bottom: 90px;
+    filter: drop-shadow(0px 7px 5px #00000025);
+}
+
+.sign_in_form{
+    margin: 10px 140px 0px 140px;
+}
+
+.signin_form input, .signin_form a{
+    display: block;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Product-Sans-R';
+    font-size: 20px;
+    border: none;
+    color: #205678;
+    box-shadow: 0px 2.5px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 10px 20px;
+    background-color: #e7f6fd;
+}
+
+.sign_in_form input:focus{
+    color: #e7f6fd;
+    background-color: #205678;
+}
+
+#sign_in_for_pass{
+    margin-left: 90px;
+    background: none;
+    box-shadow: none;
+    text-decoration: none;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+#sign_in_for_pass:hover{
+    background-color: #e7f6fd99;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+#sign_in_submit{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+#sign_in_submit:hover{
+    background-color: #205678;
+    color: #e7f6fd;
+    cursor: pointer;
+}
+
+.sign_up_opt{
+    position: relative;
+    float: right;
+    margin-top: 170px;
+    width: 370px;
+}
+
+.sign_up_opt_text{
+    text-align: center;
+    color: #e7f6fd;
+    margin-bottom: 50px;
+}
+
+#sign_up_opt_text_head{
+    font-family: 'Android';
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+#sign_up_opt_text_sub{
+    font-family: 'Product-Sans-R';
+    letter-spacing: 1px;
+    font-weight: lighter;
+    width: 250px;
+    padding-left: 60px;
+}
+
+.sign_up_page_btn{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+#sign_up_opt_btn{
+    font-family: 'Product-Sans-R';
+    color: #e7f6fd;
+    font-size: 20px;
+    box-shadow: 0px 2.5px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 8px 18px;
+    background-color: #e7f6fd01;
+    border: 2px solid #e7f6fd;
+    border-radius: 50px;
+}
+
+#sign_up_opt_btn:hover{
+    padding: 10px 20px;
+    color: #205678;
+    background-color: #e7f6fd;
+    border: none;
+    cursor: pointer;
+}
+
+/*  #########################################################################
+    #########################################################################
+    #########################################################################
+    #########################################################################
+    #########################################################################
+                             SIGN UP PAGE START
+    #########################################################################
+    #########################################################################
+    #########################################################################
+    #########################################################################
+    #########################################################################
+*/
+
+.sign_up{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -315px;
+    margin-left: -500px;
+}
+
+.sign_up_bg{
+    position: absolute;
+}
+
+#sign_up_img{
+    width: 1000px;
+    height: auto;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 30px;
+}
+
+.sign_in_opt{
+    position: relative;
+    float: left;
+    margin-top: 170px;
+    width: 380px;
+}
+
+.sign_in_opt_text{
+    text-align: center;
+    color: #e7f6fd;
+    margin-bottom: 50px;
+}
+
+#sign_in_opt_text_head{
+    font-family: 'Android';
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+#sign_in_opt_text_sub{
+    font-family: 'Product-Sans-R';
+    letter-spacing: 1px;
+    font-weight: lighter;
+    width: 270px;
+    padding-left: 50px;
+}
+
+.sign_in_page_btn{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+#sign_in_opt_btn{
+    font-family: 'Product-Sans-R';
+    color: #e7f6fd;
+    font-size: 20px;
+    box-shadow: 0px 2.5px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 8px 18px;
+    background-color: #e7f6fd01;
+    border: 2px solid #e7f6fd;
+    border-radius: 50px;
+}
+
+#sign_in_opt_btn:hover{
+    padding: 10px 20px;
+    color: #205678;
+    background-color: #e7f6fd;
+    border: none;
+}
+
+.sign_up_details{
+    position: relative;
+    float: right;
+    width: 625px;
+    height: 800px;
+}
+
+.sign_up_head{
+    font-family: 'Android';
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #3882a5;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    filter: drop-shadow(0px 7px 5px #00000025);
+}
+
+.sign_up_form{
+    margin: 10px 140px 0px 140px;
+}
+
+.signup_form input{
+    display: block;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Product-Sans-R';
+    font-size: 20px;
+    border: none;
+    color: #205678;
+    box-shadow: 0px 2.5px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 10px 20px;
+    background-color: #e7f6fd;
+}
+
+.sign_up_form input:focus{
+    color: #e7f6fd;
+    background-color: #205678;
+}
+
+#sign_up_submit{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+#sign_up_submit:hover{
+    background-color: #205678;
+    color: #e7f6fd;
+    cursor: pointer;
+}

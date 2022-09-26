@@ -1,0 +1,338 @@
+body{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+html{ 
+    background: url(../Media/BG.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: Product-Sans-R;
+    src: url(../Font/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Android;
+    src: url(../Font/android.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Next;
+    src: url(../Font/AvenirNext-UltraLight.ttf);
+}
+
+.head{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav{
+    margin: 40px 50px 0px 50px;
+}
+
+.logo{
+    height: 55px;
+    float: left;
+}
+
+#logoimg{
+    max-height: 100%;
+    width: auto;
+}
+
+.navbtns{
+    float: right;
+    display: flex;
+}
+
+.search,.menu,.user{
+    text-align: center;
+    display: inline-block;
+    margin: 6px 0px 0px 0px;
+}
+
+.searchbtn{
+    font-family: 'Product-Sans-R';
+    font-size: 22px;
+    cursor: pointer;
+    color: #205678;
+    background: none;
+    border: none;
+    padding: 5px  10px;
+}
+
+.searchbtn:hover{
+    color: #e7f6fd;
+    background-color: #3882a5;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.menu{
+    position: relative;
+}
+
+.menubtn{
+    font-family: 'Product-Sans-R';
+    font-size: 22px;
+    cursor: pointer;
+    color: #205678;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+  
+.menudrpdwn{
+    display: none;
+    position: absolute;
+    background-color: #e7f6fd99;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    min-width: 140px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.menudrpdwn a{
+    font-family: 'Product-Sans-R';
+    color: #3882a5;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+  
+.menudrpdwn a:hover {
+    background-color: #3882a5;
+    color: #e7f6fd;
+}
+  
+.menu:hover .menudrpdwn {
+    display: block;
+}
+
+.menu:hover .menubtn{
+    background-color: #3882a5;
+    color: #e7f6fd;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.user{
+    position: relative;
+}
+
+.userbtn{
+    font-family: 'Product-Sans-R';
+    font-size: 22px;
+    cursor: pointer;
+    color: #205678;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+  
+.userdrpdwn{
+    display: none;
+    position: absolute;
+    background-color: #e7f6fd99;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    min-width: 110px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.userdrpdwn a{
+    font-family: 'Product-Sans-R';
+    color: #3882a5;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 16px;
+}
+
+.userdrpdwn input{
+    font-family: 'Product-Sans-R';
+    color: #3882a5;
+    font-size: 18px;
+    border: none;
+    background: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.userdrpdwn input:hover{
+    cursor: pointer;
+    color: #e7f6fd;
+}
+  
+.userdrpdwn a:hover {
+    background-color: #3882a5;
+    color: #e7f6fd;
+}
+  
+.user:hover .userdrpdwn {
+    display: block;
+}
+
+.user:hover .userbtn{
+    background-color: #3882a5;
+    color: #e7f6fd;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.greetings{
+    padding-top: 150px;
+    margin: 0px;
+}
+
+.welcomenote{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+#greet{
+    padding-top: 70px;
+    font-family: 'Product-Sans-R';
+    font-size: 30px;
+    color: #205678;
+}
+
+#mainline{
+    font-family: 'Android';
+    letter-spacing: 3px;
+    font-size: 60px;
+    color: #3882a5;
+    margin-bottom: 40px;
+}
+
+#subline{
+    font-family: 'Avenir-Next';
+    font-size: 35px;
+    color: #205678;
+    margin-top: 0;
+    padding-bottom: 70px;
+}
+
+.homepagebtns2{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.homepageblog2{
+    float: left;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: solid 2px #205678;
+    color: #205678;
+    font-family: 'Product-Sans-R';
+    font-size: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 240px;
+    padding: 8px 18px;
+}
+
+.homepageprofile2{
+    float: right;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: solid 2px #205678;
+    color: #205678;
+    font-family: 'Product-Sans-R';
+    font-size: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 240px;
+    padding: 8px 18px;
+}
+
+.homepageblog2:hover, .homepageprofile2:hover{
+    background-color: #205678;
+    color: #e7f6fd;
+}
+
+.homepagebtns{
+    width: fit-content;
+    margin: 0 auto;
+    display : table;
+}
+
+.homepagebtns div{
+    Display:table-cell; 
+    Vertical-align:top;
+}
+
+.homepagebtns a{
+    text-decoration: none;
+}
+
+.homepageblog{
+    width: 130px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: solid 2px #205678;
+    color: #205678;
+    font-family: 'Product-Sans-R';
+    font-size: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 240px;
+    padding: 8px 18px;
+}
+
+.homepageprofile{
+    width: 130px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: solid 2px #205678;
+    color: #205678;
+    font-family: 'Product-Sans-R';
+    font-size: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 240px;
+    padding: 8px 18px;
+}
+
+.homepagemessages{
+    width: 130px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: solid 2px #205678;
+    color: #205678;
+    font-family: 'Product-Sans-R';
+    font-size: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 240px;
+    padding: 8px 18px;
+}
+
+.homepageblog:hover, .homepageprofile:hover, .homepagemessages:hover{
+    background-color: #205678;
+    color: #e7f6fd;
+}
