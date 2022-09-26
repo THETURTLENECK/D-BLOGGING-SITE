@@ -2,7 +2,7 @@
     D BLOGGING SITE
 </h1>
 
-<p font-size:12px>
+<p font-size:20px>
     Website : 
     <a href='https://project1.dprojects.epizy.com'>
         https://project1.dprojects.epizy.com
