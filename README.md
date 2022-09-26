@@ -1,2 +1,1 @@
-# D BLOGGING SITE
-## A text based blogging platform
+# D BLOGGING SITE ## A text based blogging platform
