@@ -4,7 +4,7 @@
 
 <p>
     Website : 
-    <a href='https://project1.dprojects.epizy.com' target='__blank'>
+    <a href='https://project1.dprojects.epizy.com'>
         https://project1.dprojects.epizy.com
     </a>
 </p>
