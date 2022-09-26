@@ -93,7 +93,7 @@
 
     <div class="allmessages">
         <?php
-            $ADMIN = 'dprofessionalemail@gmail.com';
+            $ADMIN = 'ADMIN_USERNAME';
 
             if($ADMIN == $_SESSION['signinemail'])
             {
